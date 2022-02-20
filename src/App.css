@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  font-size: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  height:80px;
+  background-color:80px;
+  background-color: #fff;
+  width:100%;
+  font-size: 35px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+main{
+  height:calc(100vh - 80px);
+  background-color: #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+form{
+  height:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+
+form > input{
+  width:300px;
+  font-size:28px;
+  padding:10px;
+  border-radius: 99px;
+}
+
+button{
+  font-size: 25px;
+  background-color:green;
+  color:white;;
+  border:none;
+  cursor: pointer;
+  padding:15px 25px;
+}
+
+button:hover{
+  background-color: yellowgreen;
+  transition: 0.5s ease;
+}
+
+.btn-location{
+  margin-left: 10px;
+  background: none;
+  color:green;
+  border:none;
+  cursor: pointer;
+  padding:15px 25px;
+}
+.btn-location:hover{
+  color:yellowgreen;
+  background:none;
+}
+
+.location-name{
+  font-size: 35px;
+  margin-top: 30px;
+  text-align: center;  
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px;
+}
+.temperature{
+  box-shadow: 0px 1px 10px gray;
+  font-size: 40px;
+  margin-top: 30px;
+  /* text-align: center; */
+  /* display: flex; */
+  padding:20px 20px;
+  /* height:20rem; */
+  width:40rem;
+  background-color: #fff;
+}
+
+.sub-description{
+  display: flex;
+}
+.head{
+  height:170px;
+  /* background-color: yellow; */
+  width:100%;
+  display: flex;
+  align-items: center;
+  border-bottom:2px solid gray ;
+
+}
+
+.sub-description{
+  margin-left: 200px;
+  border-left: 2px solid gray;
+  padding-left: 10px;
+  height:60%;
+  align-items: center;
+}
+.description{
+  margin-top: 20px;
+  line-height: 2.5rem;
+}
+
+.head > div >p{
+  font-size: 22px;
+}
+.wind-degree{
+  display: flex;
+}
+
+.direction{
+  font-weight: 800;
+}
+@media(min-width:960px){
+  form > input{
+    width:800px;
   }
 }
